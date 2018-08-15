@@ -1,0 +1,106 @@
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #212529;
+  line-height: 1.5;
+}
+
+/* For desktop: */
+
+@media only screen and (min-width: 768px) {
+  .nea_container {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 768px) {}
+
+.nea_grow {
+  flex: 1 1 auto;
+}
+
+.nea_content {
+  flex-grow: 1;
+}
+
+.nea_section1 {
+  padding-top: 50px;
+  color: #fff;
+  background: linear-gradient(to bottom, #1a4fbc 1%, #2f85d0 100%);
+}
+
+.nea_section2 {
+  margin: 50px 10px;
+}
+
+.weather_today {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.weather_today h1 {
+  font-size: 2em;
+  font-weight: 400;
+  margin: 0;
+}
+
+.weather_today .info {
+  display: flex;
+  align-items: center;
+}
+
+.weather_today .info>span {
+  padding: 5px;
+}
+
+.weather_today>div {
+  padding: 10px;
+}
+
+.weather_sections {
+  display: flex;
+}
+
+.weather_sections .box {
+  flex-grow: 1;
+  flex-basis: 0;
+  border-right: 1px solid #fff;
+  cursor: pointer;
+}
+
+.weather_sections .box:first-child .value span {
+  background-color: #0f709f;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+.weather_sections .box:last-child {
+  border: 0;
+  align-self: center;
+}
+
+.weather_sections div {
+  text-align: center;
+}
+
+.title,
+.status {
+  font-size: 0.65em;
+  margin: 10px 0;
+}
+
+.value {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.status {
+  color: #eee;
+}
+
+.mb-5 {
+  margin-bottom: 3rem;
+}
